@@ -57,9 +57,9 @@ layout: default
           <a class="btn btn-primary float-right" href="{{"/posts" | relative_url }}">View All Posts &rarr;</a>
         </div>
         <div class="col-lg-4 col-lg-2">
-          <ul>
+          <ul class="category">
           {% for category in site.categories %}
-          <li><a href="/category/{{ category | first }}">{{ category | first }} ({{ category | last | size }})</a></li>
+            <li {% if category[0] == page.category %} class="current" {% endif %}><a href="/category/{{ category | first }}">{{ category | first }} ({{ category | last | size }})</a></li>
           {% endfor %}
         </ul>
         </div>
