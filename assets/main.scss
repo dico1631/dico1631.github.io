@@ -4,8 +4,14 @@
 
 @import "styles";
 
+.flexBox{
+    display: flex;
+}
+.category * {
+    color: white;
+}
 .category {
     .current a {
-        color: blue;
+        color: rgb(146, 181, 221);
     }
 }
