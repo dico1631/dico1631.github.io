@@ -6,7 +6,7 @@ layout: default
 <div class="flexBox">
   {% if page.background %}
   <header class="masthead" style="background-image: url('{{ page.background | prepend: site.baseurl | replace: '//', '/' }}')">
-  {% else %}
+    {% else %}
   <header class="masthead">
     {% endif %}
     <div class="overlay"></div>
@@ -58,9 +58,6 @@ layout: default
           {{ post.date | date: '%B %d, %Y' }} &middot; {% include read_time.html content=post.content %}            
         </p>
       </article>
-
-      <hr>
-
       {% endfor %}
 
       <!-- Pager -->
