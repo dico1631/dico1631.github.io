@@ -1,9 +1,9 @@
 ---
 layout: post
 title: 생성자 함수
-subtitle: 
+subtitle: 생성자 함수 선언 및 사용 기초
 categories: javascript
-tags: [javascript, ]
+tags: [javascript, constructor]
 ---
 
 ## 생성자 함수
