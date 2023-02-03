@@ -67,3 +67,17 @@ document.write(user4);
 - 출력된 결과
 - ![생성자 함수 코드 결과 console 화면](/assets/images/javascript/post/constructor_1.png)
 
+### 익명 생성자 함수
+> new funstion(){...}
+재사용성이 필요 없는 복잡한 객체를 만들 경우에도 생성자 함수를 활용할 수 있다.
+```javascript
+let user = new function() {
+  this.name = "John";
+  this.isAdmin = false;
+
+  // 사용자 객체를 만들기 위한 여러 코드.
+  // 지역 변수, 복잡한 로직, 구문 등의
+  // 다양한 코드가 여기에 들어갑니다.
+};
+```
+이러한 익명 생성자 함수는 생성자 함수의 이름 없이, new 연산자를 붙여 함수를 작성 후 변수에 할당해 주면 됩니다. 이렇게 만들어진 함수는 익명 함수이기에 어디에도 저장되지 않기에 재사용이 불가능합니다. 이렇게 익명 생성자 함수를 활용하면 재사용은 막으면서 코드를 캡슐화 할 수 있습니다.
