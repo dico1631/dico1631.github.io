@@ -2,8 +2,8 @@
 layout: post
 title: 객체 메소드와 Computed property
 subtitle: 객체 메소드와 Computed property
-categories: javascript, ObjectMethods, ComputedProperty
-tags: [ObjectMethods, ComputedProperty]
+categories: javascript
+tags: [javascript, ObjectMethods, ComputedProperty]
 ---
 
 ## Computed Property
@@ -12,16 +12,16 @@ tags: [ObjectMethods, ComputedProperty]
     ```javascript
     let a = 'age';
     let user = {
-      name = "Mike";
-      [a] = 30; // [a]에 변수 a에 들어간 값인 'age'가 들어감
+      name : "Mike",
+      [a] : 30, // [a]에 변수 a에 들어간 값인 'age'가 들어감
     }
     ```
 
     ```javascript
     // 계산값도 가능
     let user = {
-      ["이" + "름"] = "Mike";
-      [1+3] = 4; 
+      ["이" + "름"] : "Mike",
+      [1+3] : 4, 
     }
     ```
 ## Object Methods
