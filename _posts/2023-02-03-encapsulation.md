@@ -2,13 +2,13 @@
 layout: post
 title: 캡슐화
 subtitle: 캡슐화의 정의와 활용 이유
-categories: 기본 개념
+categories: 기본개념
 tags: [definition, encapsulation]
 ---
 
 ## 캡슐화의 정의
 사전적 캡슐화의 정의는 아래와 같다.
-> 캡슐화(영어: encapsulation)는 객체 지향 프로그래밍에서 다음 2가지 측면이 있다:
+> 캡슐화(영어: encapsulation)는 객체 지향 프로그래밍에서 다음 2가지 측면이 있다:<br/>
 객체의 속성(data fields)과 행위(메서드, methods)를 하나로 묶고,
 실제 구현 내용 일부를 외부에 감추어 은닉한다.
 
