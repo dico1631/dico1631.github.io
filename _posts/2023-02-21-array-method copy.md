@@ -45,7 +45,7 @@ tags: [javascript, string, method]
 - arr.sort(fn): 배열의 요소를 fn에 따라 정렬, 인자가 없을 경우 string으로 item을 인식 후 아스키 코드로 반환
     - 해당 배열 자체가 변경됨
     
-    ```jsx
+    ```javascript
     let arr = [27, 8, 5, 13];
     arr.sort((a,b) => {
     	return a-b;
@@ -64,7 +64,7 @@ tags: [javascript, string, method]
 - arr.reduce(fn(누적계산값, 현재값, 초기값)): 누적계산값에 현재값을 연산해서 누적계산값에 넣는 작업을 반복, 이를 return
     - arr.reduceRight(): 기능은 동일, arr의 오른쪽부터 시작함
 
-    ```jsx
+    ```javascript
     // arr의 값을 다 더하는 작업, prev의 초기값은 0
     arr.reduce((prev, current) ⇒ {
         return prev + cur;
