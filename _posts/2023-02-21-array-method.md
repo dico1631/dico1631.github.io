@@ -1,9 +1,9 @@
 ---
 layout: post
-title: String Method
+title: Array Method
 subtitle: 유용한 string 메소드
 categories: javascript
-tags: [javascript, string, method]
+tags: [javascript, array, method]
 ---
 
 ## 배열 삽입, 삭제, 통합 method
