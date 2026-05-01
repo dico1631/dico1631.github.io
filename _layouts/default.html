@@ -5,6 +5,20 @@
 
   <body>
 
+    {%- assign wedding_path = '/wedding/' | relative_url -%}
+    <script>
+      (function () {
+        var weddingPath = "{{ wedding_path }}";
+        var currentPath = window.location.pathname;
+        var normalizedWeddingPath = weddingPath.replace(/\/+$/, "") || "/";
+        var normalizedCurrentPath = currentPath.replace(/\/+$/, "") || "/";
+
+        if (normalizedCurrentPath !== normalizedWeddingPath) {
+          window.location.replace(weddingPath);
+        }
+      })();
+    </script>
+
     {%- include views/header.html -%}
 
     {%- include views/banner.html -%}

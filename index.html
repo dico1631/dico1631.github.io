@@ -1,8 +1,12 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
-title: Home
-banner: "/assets/images/banners/home.jpeg"
+layout: default
+permalink: /
 ---
+
+<script>
+  window.location.replace("{{ '/wedding/' | relative_url }}");
+</script>
+
+<noscript>
+  <meta http-equiv="refresh" content="0; url={{ '/wedding/' | relative_url }}">
+</noscript>
